@@ -1,0 +1,54 @@
+<html>
+
+<title>crawler-disabled-elements-mock</title>
+
+<body>
+    <button id="enabled">
+        enabled
+    </button>
+    <button id="disabled" disabled>
+        disabled
+    </button>
+    <button id="hidden" hidden>
+        hidden
+    </button>
+    <button id="readonly" readonly>
+        readonly
+    </button>
+    <button id="aria-disabled" aria-disabled="true">
+        aria-disabled
+    </button>
+    <button id="aria-hidden" aria-hidden="true">
+        aria-hidden
+    </button>
+    <button id="aria-readonly" aria-readonly="true">
+        aria-readonly
+    </button>
+
+</body>
+
+<script type="text/javascript">
+    document.getElementById("enabled").onclick = function () {
+        location.href = "http://localhost:3000/pages/enabled.html";
+    };
+    document.getElementById("disabled").onclick = function () {
+        location.href = "http://localhost:3000/pages/disabled.html";
+    };
+    document.getElementById("hidden").onclick = function () {
+        location.href = "http://localhost:3000/pages/hidden.html";
+    };
+    document.getElementById("readonly").onclick = function () {
+        location.href = "http://localhost:3000/pages/readonly.html";
+    };
+    document.getElementById("aria-disabled").onclick = function () {
+        location.href = "http://localhost:3000/pages/aria-disabled.html";
+    };
+    document.getElementById("aria-hidden").onclick = function () {
+        location.href = "http://localhost:3000/pages/aria-hidden.html";
+    };
+    document.getElementById("aria-readonly").onclick = function () {
+        location.href = "http://localhost:3000/pages/aria-readonly.html";
+    };
+</script>
+
+</html>

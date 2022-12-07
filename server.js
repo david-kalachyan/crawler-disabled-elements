@@ -10,5 +10,5 @@ app.listen(port, () => {
 app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
-    res.send(__dirname + "/index.html")
+    res.sendFile(__dirname + "/pages/index.html")
 })
