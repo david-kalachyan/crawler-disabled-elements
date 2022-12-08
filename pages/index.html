@@ -12,9 +12,8 @@
     <button id="hidden" hidden>
         hidden
     </button>
-    <button id="readonly" readonly>
-        readonly
-    </button>
+    <input id="readonly" readonly>
+    </input>
     <button id="aria-disabled" aria-disabled="true">
         aria-disabled
     </button>
@@ -24,30 +23,52 @@
     <button id="aria-readonly" aria-readonly="true">
         aria-readonly
     </button>
+    <img id="width" width="-1" src="/click-me.png">
+    </img>
+    <img id="height" height="-1" src="/click-me.png">
+    </img>
+    <button id="visibility" style="visibility:collapse">
+        style="visibility:collapse"
+    </button>
+    <button id="pointer" style="pointer-events:none">
+        style="pointer-events:none"
+    </button>
 
 </body>
 
 <script type="text/javascript">
     document.getElementById("enabled").onclick = function () {
-        location.href = "http://localhost:3000/pages/enabled.html";
+        location.href = "/pages/enabled.html";
     };
     document.getElementById("disabled").onclick = function () {
-        location.href = "http://localhost:3000/pages/disabled.html";
+        location.href = "/pages/disabled.html";
     };
     document.getElementById("hidden").onclick = function () {
-        location.href = "http://localhost:3000/pages/hidden.html";
+        location.href = "/pages/hidden.html";
     };
     document.getElementById("readonly").onclick = function () {
-        location.href = "http://localhost:3000/pages/readonly.html";
+        location.href = "/pages/readonly.html";
     };
     document.getElementById("aria-disabled").onclick = function () {
-        location.href = "http://localhost:3000/pages/aria-disabled.html";
+        location.href = "/pages/aria-disabled.html";
     };
     document.getElementById("aria-hidden").onclick = function () {
-        location.href = "http://localhost:3000/pages/aria-hidden.html";
+        location.href = "/pages/aria-hidden.html";
     };
     document.getElementById("aria-readonly").onclick = function () {
-        location.href = "http://localhost:3000/pages/aria-readonly.html";
+        location.href = "/pages/aria-readonly.html";
+    };
+    document.getElementById("width").onclick = function () {
+        location.href = "/pages/width.html";
+    };
+    document.getElementById("height").onclick = function () {
+        location.href = "/pages/height.html";
+    };
+    document.getElementById("visibility").onclick = function () {
+        location.href = "/pages/visibility.html";
+    };
+    document.getElementById("pointer").onclick = function () {
+        location.href = "/pages/pointer.html";
     };
 </script>
 
